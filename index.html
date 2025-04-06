@@ -11,10 +11,13 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            color: #333;
         }
         h1 {
             color: #2c3e50;
             text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
         }
         .news-item {
             margin-bottom: 30px;
@@ -33,9 +36,11 @@
             padding: 15px;
             border-radius: 5px;
             margin-top: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .resources h3 {
             margin-top: 0;
+            color: #2c3e50;
         }
         a {
             color: #2980b9;
@@ -44,22 +49,76 @@
         a:hover {
             text-decoration: underline;
         }
+        .subscribe-section {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .category {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .category:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Latest Research News</h1>
+        <div class="categories">
+            <span class="category">Technology</span>
+            <span class="category">Health</span>
+            <span class="category">Environment</span>
+            <span class="category">Physics</span>
+            <span class="category">Social Sciences</span>
+        </div>
     </header>
     <main>
         <div class="news-item">
             <h2>New Advances in Quantum Computing</h2>
             <p class="news-date">April 2, 2025</p>
             <p>Researchers at MIT have announced a breakthrough in quantum computing that could potentially lead to more stable qubits, addressing one of the field's biggest challenges.</p>
+            <p>The research team, led by Dr. Sarah Chen, demonstrated a new method for reducing quantum decoherence, which has been a major obstacle in developing practical quantum computers.</p>
         </div>
+        
         <div class="news-item">
             <h2>Climate Research Shows Promising Results</h2>
             <p class="news-date">March 28, 2025</p>
             <p>A new study published in Nature suggests that targeted carbon capture technologies may be more effective than previously thought.</p>
+            <p>The international collaboration, involving scientists from 12 countries, found that certain engineered materials can sequester carbon at rates up to 40% higher than current commercial technologies while requiring less energy input.</p>
+        </div>
+        
+        <div class="news-item">
+            <h2>Breakthrough in Alzheimer's Research</h2>
+            <p class="news-date">March 25, 2025</p>
+            <p>Scientists at Johns Hopkins University have identified a new biomarker that could enable earlier detection of Alzheimer's disease, potentially years before symptoms appear.</p>
+            <p>The discovery could lead to more effective treatments by allowing intervention at the earliest stages of the disease progression.</p>
+        </div>
+        
+        <div class="subscribe-section">
+            <h3>Stay Updated with Research News</h3>
+            <p>Subscribe to our weekly newsletter to get the latest research news delivered to your inbox.</p>
+            <button style="background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Subscribe Now</button>
         </div>
         
         <div class="resources">
@@ -67,11 +126,14 @@
             <p>Check out these academic journals for more in-depth research:</p>
             <ul>
                 <li><a href="https://www.nature.com" target="_blank">Nature</a> - Leading international science journal</li>
+                <li><a href="https://www.science.org" target="_blank">Science</a> - Peer-reviewed academic journal</li>
+                <li><a href="https://www.pnas.org" target="_blank">PNAS</a> - Proceedings of the National Academy of Sciences</li>
+                <li><a href="https://www.cell.com" target="_blank">Cell</a> - Journal of biological research</li>
             </ul>
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 Research News Hub</p>
+        <p>&copy; 2025 Research News Hub | <a href="#">About Us</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
